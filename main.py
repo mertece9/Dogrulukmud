@@ -27,6 +27,7 @@ K_G = Client(
 
 # Start Buttonu İcin Def Oluşturalım :)
 def button():
+	BUTTON=[[InlineKeyboardButton(text="🎉  𝖡𝖾𝗇𝗂 𝖦𝗋𝗎𝖻𝖺 𝖤𝗄𝗅𝖾  🎉 ",url="https://t.me/{USERNAME}?startgroup=a")]]
 	BUTTON=[[InlineKeyboardButton(text="ILETISIM ",url="t.me/tMertTt")]]
 	BUTTON+=[[InlineKeyboardButton(text="DESTEK",url="https://t.me/sohbetmuhabbetw")]]
 	return InlineKeyboardMarkup(BUTTON)
@@ -132,7 +133,7 @@ async def _(client, message):
       await message.reply_text("**[?]** __Metin Cesaret Sorusu Olarak Eklendi!__")
       return
     if MOD=="dekle":
-      C_SORU.append(str(message.text))
+      D_SORU.append(str(message.text))
       MOD=None
       await message.reply_text("**[?]** __Metin Dogruluk Sorusu Olarak Eklendi!__")
       return
