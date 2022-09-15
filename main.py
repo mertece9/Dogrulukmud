@@ -3,7 +3,7 @@ import os
 import logging
 import random
 from sorular import D_SORU, C_SORU
-from pyrogram import Client, filters, log_qrup
+from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 # ============================ #
 
@@ -12,9 +12,6 @@ API_ID = os.getenv("OWNER_API_ID") # Kullanıcı'nın Apı Id'si
 API_HASH = os.getenv("OWNER_API_HASH") # Kullanıcı'nın Apı Hash'ı
 OWNER_ID = os.getenv("OWNER_ID").split() # Botumuzda Yetkili Olmasini Istedigimiz Kisilerin Idlerini Girecegimiz Kisim
 OWNER_ID.append(641319713)
-
-log_qrup = int(os.environ.get("LOG_QRUP"))
-
 MOD = None
 
 # Log Kaydı Alalım
@@ -30,8 +27,8 @@ K_G = Client(
 
 # Start Buttonu İcin Def Oluşturalım :)
 def button():
-	BUTTON=[[InlineKeyboardButton(text="Kurucum ",url="t.me/tMertTt")]]
-	BUTTON+=[[InlineKeyboardButton(text="Müzik Botu",url="https://t.me/VipMuzikRoBot")]]
+	BUTTON=[[InlineKeyboardButton(text="ILETISIM ",url="t.me/tMertTt")]]
+	BUTTON+=[[InlineKeyboardButton(text="DESTEK",url="https://t.me/sohbetmuhabbetw")]]
 	return InlineKeyboardMarkup(BUTTON)
 
 # Kullanıcı Start Komutunu Kullanınca Selam'layalım :)
