@@ -3,7 +3,7 @@ import os
 import logging
 import random
 from sorular import D_SORU, C_SORU
-from pyrogram import Client, filters
+from pyrogram import Client, filters, log_qrup
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 # ============================ #
 
