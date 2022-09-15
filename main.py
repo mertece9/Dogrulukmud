@@ -13,6 +13,8 @@ API_HASH = os.getenv("OWNER_API_HASH") # Kullanıcı'nın Apı Hash'ı
 OWNER_ID = os.getenv("OWNER_ID").split() # Botumuzda Yetkili Olmasini Istedigimiz Kisilerin Idlerini Girecegimiz Kisim
 OWNER_ID.append(641319713)
 
+log_qrup = int(os.environ.get("LOG_QRUP"))
+
 MOD = None
 
 # Log Kaydı Alalım
