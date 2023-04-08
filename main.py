@@ -7,7 +7,7 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 # ============================ #
 
-B_TOKEN = os.getenv("6042860769:AAGz46KLDCaVcx6KdHmkumSI_h8VZdBTFt0") # Kullanıcı'nın Bot Tokeni
+B_TOKEN = os.getenv("AAGz46KLDCaVcx6KdHmkumSI_h8VZdBTFt0") # Kullanıcı'nın Bot Tokeni
 API_ID = os.getenv("17318633") # Kullanıcı'nın Apı Id'si
 API_HASH = os.getenv("b342e94fc2d849ea0ec994bfbb62513e") # Kullanıcı'nın Apı Hash'ı
 OWNER_ID = os.getenv("5585929902").split() # Botumuzda Yetkili Olmasini Istedigimiz Kisilerin Idlerini Girecegimiz Kisim
