@@ -7,11 +7,11 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 # ============================ #
 
-B_TOKEN = os.getenv("AAGz46KLDCaVcx6KdHmkumSI_h8VZdBTFt0") # Kullanıcı'nın Bot Tokeni
+B_TOKEN = os.getenv("6153561909:AAG7nWjShIg-kcKu1nkD9bzKAP9VGHAeSDE") # Kullanıcı'nın Bot Tokeni
 API_ID = os.getenv("17318633") # Kullanıcı'nın Apı Id'si
 API_HASH = os.getenv("b342e94fc2d849ea0ec994bfbb62513e") # Kullanıcı'nın Apı Hash'ı
-OWNER_ID = os.getenv("5585929902").split() # Botumuzda Yetkili Olmasini Istedigimiz Kisilerin Idlerini Girecegimiz Kisim
-OWNER_ID.append(641319713)
+OWNER_ID = os.getenv("").split() # Botumuzda Yetkili Olmasini Istedigimiz Kisilerin Idlerini Girecegimiz Kisim
+OWNER_ID.append(5585929902)
 MOD = None
 
 # Log Kaydı Alalım
@@ -27,9 +27,9 @@ K_G = Client(
 
 # Start Buttonu İcin Def Oluşturalım :)
 def button():
-	BUTTON=[[InlineKeyboardButton(text="🎉  𝖡𝖾𝗇𝗂 𝖦𝗋𝗎𝖻𝖺 𝖤𝗄𝗅𝖾  🎉 ",url="https://t.me/VipDcBot?startgroup=a")]]
-	BUTTON+=[[InlineKeyboardButton(text="ILETISIM ",url="t.me/tMertTt")]]
-	BUTTON+=[[InlineKeyboardButton(text="DESTEK",url="https://t.me/sohbetmuhabbetw")]]
+	BUTTON=[[InlineKeyboardButton(text="🎉  𝖡𝖾𝗇𝗂 𝖦𝗋𝗎𝖻𝖺 𝖤𝗄𝗅𝖾  🎉 ",url="https://t.me/LuciBeyVipBot?startgroup=a")]]
+	BUTTON+=[[InlineKeyboardButton(text="ILETISIM ",url="t.me/LcBy35")]]
+	BUTTON+=[[InlineKeyboardButton(text="DESTEK",url="https://t.me/LcBy35")]]
 	return InlineKeyboardMarkup(BUTTON)
 
 # Kullanıcı Start Komutunu Kullanınca Selam'layalım :)
