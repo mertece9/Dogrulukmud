@@ -94,49 +94,6 @@ async def _(client, callback_query):
 		await callback_query.answer(text="Komutu Kullanan Kişi Sen Değilsin!!", show_alert=False)
 		return
 
-############################
-    # Sudo islemleri #
-@K_G.on_message(filters.command("cekle"))
-async def _(client, message):
-  global MOD
-  user = message.from_user
-  
-  if user.id not in OWNER_ID:
-    await message.reply_text("**[?]** **Sen Yetkili Birisi degilsin!!**")
-    return
-  MOD="cekle"
-  await message.reply_text("**[?]** **Eklenmesini istedigin Cesaret Sorunu Giriniz!**")
-  
-@K_G.on_message(filters.command("dekle"))
-async def _(client, message):
-  global MOD
-  user = message.from_user
-  
-  if user.id not in OWNER_ID:
-    await message.reply_text("**[?]** **Sen Yetkili Birisi degilsin!!**")
-    return
-  MOD="cekle"
-  await message.reply_text("**[?]** **Eklenmesini istedigin Dogruluk Sorunu Giriniz!**")
 
-@K_G.on_message(filters.private)
-async def _(client, message):
-  global MOD
-  global C_SORU
-  global D_SORU
-  
-  user = message.from_user
-  
-  if user.id in OWNER_ID:
-    if MOD=="cekle":
-      C_SORU.append(str(message.text))
-      MOD=None
-      await message.reply_text("**[?]** __Metin Cesaret Sorusu Olarak Eklendi!__")
-      return
-    if MOD=="dekle":
-      D_SORU.append(str(message.text))
-      MOD=None
-      await message.reply_text("**[?]** __Metin Dogruluk Sorusu Olarak Eklendi!__")
-      return
-############################
 
 K_G.run() # Botumuzu Calıştıralım :)
